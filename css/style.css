@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: #1E1E2C;
+    color: #f4f4f4;
+
+    overflow-x: hidden;
+}
+
+/* Start Nav */
+.nav-link{
+    color: #F99227;
+    font-size: 16px;
+
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.navbar{
+    padding: 15px 30px;
+
+    transition: 0.5s;
+}
+
+.navbar.changes{
+    padding: 5px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar.changes .nav-link{
+    color: #fff;
+}
+
+.navbar.changes .nav-link:hover{
+    color: #F99227;
+}
+
+.navbuttons:focus{
+    box-shadow: none;
+}
+
+
+.lines1, .lines2, .lines3{
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+
+    transition: all 0.3s;
+}
+
+.btnchanges .lines1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+
+.btnchanges .lines2{
+    opacity: 0;
+}
+
+.btnchanges .lines3{
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+
+/* End Nav */
+
+
+/* Start Banner */
+.container-fluid{
+    padding: 0;
+}
+
+.banners{
+    height: 100vh;
+
+    margin: 0;
+
+    position: relative;
+}
+
+#home .box1{
+    width: 80%;
+    height: 80%;
+    color: #f4f4f4;
+    /* background-color: #212136; */
+    background-image: linear-gradient(45deg, #212136 95%,#F99227 5%);
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banners h2{
+    padding-left: 20px;
+}
+
+.hey{
+    font-size: 20px;
+}
+
+.joy{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#text{
+    color: #F99227;
+}
+
+/* End Banner */
+
+
+
+/* Start About */
+
+.abouts{
+    padding: 0;
+}
+
+.aboutimgs{
+    padding: 0;
+    margin-top: 50px;
+}
+
+.aboutinfos{
+    padding: 0;
+}
+
+/* End About */
+
+
+
+/* Start Education&Skill Section */
+
+.edu{
+    position: relative;
+}
+
+.edu {
+    padding: 0 5px 0 40px;
+    line-height: 20px;
+
+    position: relative;
+}
+
+.edu::before {
+    content: '';
+    width: 5px;
+    height: 230px;
+    background-color: rgb(204, 204, 204);
+
+    position: absolute;
+    top: 16px;
+    left: 22px;
+}
+
+.edu .circle1 {
+    width: 13px;
+    height: 13px;
+    background-color: #f4f4f4;
+    border: 3px solid #F99227;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 35px;
+    left: 18px;
+}
+
+.edu .circle2 {
+    width: 13px;
+    height: 13px;
+    background-color: #f4f4f4;
+    border: 3px solid #F99227;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 128px;
+    left: 18px;
+}
+
+.edu .circle3 {
+    width: 13px;
+    height: 13px;
+    background-color: #f4f4f4;
+    border: 3px solid #F99227;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 196px;
+    left: 18px;
+}
+
+.skill {
+    width: 80%;
+    margin: 25px 0;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar {
+    height: 3px;
+    background-color: rgb(212, 212, 212);
+    margin-top: 14px;
+    position: relative;
+}
+
+.skill-bar::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    /* background-color: #3d87ff; */
+    bottom: 0;
+}
+
+.html::after {
+    background-color: orangered;
+    width: 70%;
+}
+
+.css::after {
+    background-color: #3d87ff;
+    width: 60%;
+}
+
+.javascript::after {
+    background-color: yellow;
+    width: 35%;
+}
+
+.bootstrap::after {
+    background-color: purple;
+    width: 40%;
+}
+
+.github::after {
+    background-color: #000;
+    width: 20%;
+}
+
+/* End Education&Skill Section */
+
+
+
+/* Start Service Section */
+.box{
+    width: 350px;
+    height: 200px;
+    color: #1E1E2C;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 20px #F99227; */
+
+    overflow: hidden;
+    position: relative;
+
+    transition: 0.5s;
+}
+
+.box:hover{
+    color: #fcffff;
+    background-color: #F99227;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.box:hover .fas{
+    color: #fcffff;
+}
+
+.box .fas{
+    color: #F99227;
+    font-size: 50px;
+    padding-top: 15px;
+    padding-left: 150px;
+
+    transition: 0.5s;
+}
+
+.box:hover .fas::before{
+    background-color: #fcffff;
+}
+
+.box .fas::before{
+    content: '';
+    width: 350px;
+    height: 10px;
+    background-color: #F99227;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: 0.5s;
+}
+/* End Service Section */
+
+
+
+/* Start Freelancing Section */
+.freelances{
+    width: 100%;
+    height: 350px;
+    color: #f4f4f4;
+    background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(../img/service3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.freelancebtns{
+    color: #fcffff;
+    background-color: #F99227;
+    padding: 8px 20px;
+}
+/* End Freelancing Section */
+
+
+
+/* Start Project Section */
+/* .project img{
+    display: inline;
+} */
+
+.project-container{
+    width: 400px;
+    height: 266px;
+}
+
+.project-container img{
+    opacity: 0.7;
+
+    transition: 0.3s;
+}
+
+.project-container img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+/* End Project Section */
+
+
+
+/* Start Practice Templates Section */
+#practice a{
+    color: #F99227;
+}
+
+.kalays{
+    background-image: url('../img/kalay.jpg');
+    background-size: cover;
+    padding: 80px 10px;
+    border-radius: 20px;
+}
+
+.landings{
+    background-image: url('../img/landing.jpg');
+    background-size: cover;
+    padding: 80px 10px;
+    border-radius: 20px;
+}
+
+.solutions{
+    background-image: url('../img/solution.jpg');
+    background-size: cover;
+    padding: 80px 10px;
+    border-radius: 20px;
+}
+
+.neurons{
+    background-image: url('../img/neuron.jpg');
+    background-size: cover;
+    padding: 80px 10px;
+    border-radius: 20px;
+}
+/* End Practice Templates Section */
+
+
+
+/* Start Footer Section */
+.footerlinks{
+    text-decoration: none;
+    color: #fcffff;
+}
+
+.footerlinks:hover{
+    color: #F99227;
+}
+
+.fab{
+    cursor: pointer;
+}
+
+.form-control{
+    background-color: transparent;
+}
+
+.form-control:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+.footerbtns{
+    color: #fcffff;
+    background-color: #F99227;
+}
+/* End Footer Section */
